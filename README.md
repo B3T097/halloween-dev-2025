@@ -82,3 +82,36 @@ countSheep('peesh')
 — Fin Reto #02 —
 
 ---
+
+## Reto #03 – Es viernes 13
+— Inicio Reto #03 —
+
+**Descripción**
+- Michael Myers ha dejado un patrón en su calendario. Cada año ataca en la noche de Halloween (31 de octubre) o en cualquier viernes 13.
+
+**Objetivo**
+- Encontrar todas las noches de terror de un año concreto.
+
+**Función a implementar**
+- `myersCalendar(year)` debe:
+  - Recibir un año (por ejemplo `2025`). Si no dan un año válido, devolver un array vacío `[]`.
+  - Devolver todas las fechas del año que sean `31 de octubre` y/o `viernes 13`.
+  - Entregar las fechas ordenadas cronológicamente.
+  - Usar el formato exactamente `YYYY-MM-DD` (con ceros a la izquierda si hace falta).
+
+**Ejemplos**
+
+```ts
+myersCalendar(2025)
+// => ['2025-06-13', '2025-09-13', '2025-10-31']
+
+myersCalendar(2026)
+// => ['2026-02-13', '2026-03-13', '2026-10-13', '2026-11-13']
+
+myersCalendar(2024)
+// => ['2024-09-13', '2024-10-31', '2024-12-13']
+```
+
+— Fin Reto #03 —
+
+---
