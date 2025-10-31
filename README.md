@@ -115,3 +115,49 @@ myersCalendar(2024)
 — Fin Reto #03 —
 
 ---
+
+## Reto #04 – ¿Cuál es tu algoritmo favorito?
+— Inicio Reto #04 —
+
+**Descripción**
+- Ghostface tiene una lista ordenada de 1000 víctimas potenciales con sus números de teléfono. Debes encontrar un número específico lo más rápido posible.
+
+**Objetivo**
+- Implementar `searchPhone(phones, target)` usando BÚSQUEDA BINARIA para localizar el índice del número en un array ordenado.
+
+**Entradas**
+- `phones`: Array de números ordenados de menor a mayor (por ejemplo: `[1001, 1002, 1005, 1008, 1010, 1015, 1020]`).
+- `target`: Número de teléfono a buscar.
+
+**Salida**
+- El índice (posición) donde se encuentra el número.
+- `-1` si el número no existe en la lista.
+
+**Consejo (Algoritmo de Búsqueda Binaria)**
+1. Mira el elemento del medio del array.
+2. Si es el objetivo, ¡lo encontraste!
+3. Si el objetivo es menor, busca en la mitad izquierda.
+4. Si el objetivo es mayor, busca en la mitad derecha.
+5. Repite hasta encontrarlo o quedarte sin elementos.
+
+**Ejemplos**
+
+```ts
+const phones = [1001, 1002, 1005, 1008, 1010, 1015, 1020]
+
+searchPhone(phones, 1008)
+// => 3 (está en el índice 3)
+
+searchPhone(phones, 1001)
+// => 0 (está en el índice 0)
+
+searchPhone(phones, 1020)
+// => 6 (está en el índice 6)
+
+searchPhone(phones, 9999)
+// => -1 (no existe)
+```
+
+— Fin Reto #04 —
+
+---
